@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+</head>
+<body>
+    <h1>Generator</h1>
+    <button onclick="getSteps()">Go to step by step</button>
+    <script>
+        function* Steps() {
+            let a = 10;
+            let b = 20;
+            console.log(a + b);
+            yield "Step 1 Completed";
+            console.log(a - b);
+            yield "Step 2 Completed";
+            console.log(a * b);
+            yield "Step 3 Completed";
+            return "all steps done";
+        }
+        let stp=Steps()
+        function getSteps(){
+            console.warn(stp.next());
+        }
+
+    </script>
+</body>
+</html>

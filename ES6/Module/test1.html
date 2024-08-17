@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import</title>
+</head>
+<body>
+    <h1>Module</h1>
+    <script type="Module" defer>
+        import  User, {OtherUser as Other,UserVar,UserClass,UOC} from "./test2.js";
+        function OtherUser() {
+            console.warn("In current File")
+        }
+        console.warn(User());
+        OtherUser();
+        console.warn(Other());
+        console.log(UserVar);
+        let uc1=new UserClass();
+        uc1.test();
+        UOC.test();
+    </script>
+    
+</body>
+</html>

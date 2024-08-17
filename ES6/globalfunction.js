@@ -1,0 +1,16 @@
+console.log(isFinite(10 / 12));
+console.log(isFinite(undefined));
+console.log(isFinite(null));
+console.log(isFinite({}));
+console.log(isFinite([]));
+console.log(isFinite("10"));
+console.log("start isNan");
+console.log(isNaN(10 / 12));
+console.log(isNaN(undefined));
+console.log(isNaN(null));
+console.log(isNaN({}));
+console.log(isNaN([]));
+console.log(isNaN("10"));
+console.log(5 + "5" - 5);
+console.log(typeof (5 + "5"));
+console.log(typeof typeof 1);
